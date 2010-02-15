@@ -1,6 +1,6 @@
-#N canvas 865 491 450 300 10;
+#N canvas 1150 513 450 300 10;
 #X obj 41 267 sendOSC;
-#X msg 41 29 disconnect;
+#X msg 41 44 disconnect;
 #X msg 199 165 connect 127.0.0.1 57110;
 #X msg 199 189 send /s_new default 1000 0 0 freq 200;
 #X msg 200 234 send /n_set 1000 freq 500 amp 0.1;
@@ -10,6 +10,7 @@
 #X text 198 140 scsynth communication;
 #X text 194 17 sclang communication;
 #X msg 197 62 send /test 1;
+#X text 40 20 don't forget...;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
 #X connect 3 0 0 0;
